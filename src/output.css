@@ -10,6 +10,7 @@
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-black: 900;
     --tracking-wide: 0.025em;
@@ -222,11 +223,20 @@
   .h-\[6px\] {
     height: 6px;
   }
+  .h-\[14px\] {
+    height: 14px;
+  }
   .h-\[16px\] {
     height: 16px;
   }
+  .h-\[20px\] {
+    height: 20px;
+  }
   .h-\[32px\] {
     height: 32px;
+  }
+  .h-\[44px\] {
+    height: 44px;
   }
   .h-\[48px\] {
     height: 48px;
@@ -249,8 +259,14 @@
   .min-h-\[260px\] {
     min-height: 260px;
   }
+  .w-\[14px\] {
+    width: 14px;
+  }
   .w-\[16px\] {
     width: 16px;
+  }
+  .w-\[20px\] {
+    width: 20px;
   }
   .w-\[32px\] {
     width: 32px;
@@ -263,6 +279,9 @@
   }
   .max-w-\[280px\] {
     max-width: 280px;
+  }
+  .max-w-\[420px\] {
+    max-width: 420px;
   }
   .max-w-\[495px\] {
     max-width: 495px;
@@ -312,6 +331,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -336,6 +358,9 @@
   .gap-\[24px\] {
     gap: 24px;
   }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
   .gap-\[32px\] {
     gap: 32px;
   }
@@ -351,9 +376,21 @@
   .rounded-\[4px\] {
     border-radius: 4px;
   }
+  .rounded-l-\[4px\] {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .rounded-r-\[4px\] {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style);
@@ -365,8 +402,20 @@
   .border-\[\#ff5a30\] {
     border-color: #ff5a30;
   }
+  .border-\[rgba\(255\,255\,255\,0\.1\)\] {
+    border-color: rgba(255,255,255,0.1);
+  }
+  .border-\[rgba\(255\,255\,255\,0\.2\)\] {
+    border-color: rgba(255,255,255,0.2);
+  }
+  .border-\[rgba\(255\,255\,255\,0\.05\)\] {
+    border-color: rgba(255,255,255,0.05);
+  }
   .border-gray-200 {
     border-color: var(--color-gray-200);
+  }
+  .bg-\[\#1e212c\] {
+    background-color: #1e212c;
   }
   .bg-\[\#432b72\] {
     background-color: #432b72;
@@ -379,6 +428,9 @@
   }
   .bg-\[\#ff5a30\] {
     background-color: #ff5a30;
+  }
+  .bg-\[rgba\(255\,255\,255\,0\.05\)\] {
+    background-color: rgba(255,255,255,0.05);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -400,6 +452,9 @@
   }
   .px-\[16px\] {
     padding-inline: 16px;
+  }
+  .px-\[24px\] {
+    padding-inline: 24px;
   }
   .px-\[32px\] {
     padding-inline: 32px;
@@ -425,6 +480,9 @@
   .pt-\[12px\] {
     padding-top: 12px;
   }
+  .pt-\[24px\] {
+    padding-top: 24px;
+  }
   .pt-\[40px\] {
     padding-top: 40px;
   }
@@ -434,8 +492,14 @@
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
+  .pb-\[30px\] {
+    padding-bottom: 30px;
+  }
   .pb-\[40px\] {
     padding-bottom: 40px;
+  }
+  .pb-\[50px\] {
+    padding-bottom: 50px;
   }
   .pb-\[60px\] {
     padding-bottom: 60px;
@@ -448,6 +512,9 @@
   }
   .font-sans {
     font-family: var(--font-sans);
+  }
+  .text-\[11px\] {
+    font-size: 11px;
   }
   .text-\[12px\] {
     font-size: 12px;
@@ -506,6 +573,10 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
   .tracking-\[-0\.5px\] {
     --tw-tracking: -0.5px;
     letter-spacing: -0.5px;
@@ -543,6 +614,12 @@
   .text-\[\#ff5a30\] {
     color: #ff5a30;
   }
+  .text-\[rgba\(255\,255\,255\,0\.4\)\] {
+    color: rgba(255,255,255,0.4);
+  }
+  .text-\[rgba\(255\,255\,255\,0\.6\)\] {
+    color: rgba(255,255,255,0.6);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -559,6 +636,11 @@
   .placeholder-\[\#9a9ca5\] {
     &::placeholder {
       color: #9a9ca5;
+    }
+  }
+  .placeholder-\[rgba\(255\,255\,255\,0\.4\)\] {
+    &::placeholder {
+      color: rgba(255,255,255,0.4);
     }
   }
   .accent-\[\#ff5a30\] {
